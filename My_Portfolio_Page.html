@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend Developer Portfolio of Gauri Pawar. متخصص in React, HTML, CSS, JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, React Developer, Portfolio, Gauri Pawar"
+    />
+    <meta name="author" content="Gauri Pawar" />
+    <title>Gauri's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <svg
+          width="200"
+          height="80"
+          viewBox="0 0 220 80"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="grad2">
+              <stop offset="0%" stop-color="#00f7ff" />
+              <stop offset="100%" stop-color="#00ff88" />
+            </linearGradient>
+          </defs>
+
+          <text
+            x="10"
+            y="50"
+            font-size="36"
+            font-family="monospace"
+            fill="url(#grad2)"
+          >
+            <tspan opacity="0">
+              &lt;GAP/&gt;
+              <animate
+                attributeName="opacity"
+                from="0"
+                to="1"
+                dur="1s"
+                fill="freeze"
+              />
+            </tspan>
+          </text>
+        </svg>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="content">
+        <h3>Hello, It's Me</h3>
+        <h1>Gauri Pawar</h1>
+        <h2>I'm a <span>Frontend Developer</span></h2>
+        <p>Building modern, scalable and beautiful web applications.</p>
+
+        <div class="socials">
+          <!-- GitHub -->
+          <a
+            href="https://github.com/gauripawar7284"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="icon-btn"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            class="icon-btn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+917057567284" class="icon-btn">
+            <i class="fas fa-phone"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:gauripawar7284@gmail.com" class="icon-btn">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <a
+          href="./assets/Gauri_Pawar_Resume.docx"
+          class="hero_btn"
+          download
+          title="Download Resume"
+          >Download CV</a
+        >
+      </div>
+
+      <div class="image">
+        <div class="hex">
+          <img src="./assets/Profile_Image.jpeg" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about glass">
+      <div class="about-img">
+        <div class="hex small">
+          <img src="./assets/Profile_Image.jpeg" alt="Profile Image" />
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          Results-driven Front-End Developer with 2.8 years of experience in
+          designing, developing, and maintaining scalable web applications using
+          React.js. Strong expertise in JavaScript (ES6+), HTML5, Redux, and
+          modern web technologies. Proficient in version control using Git and
+          experienced with agile tools like JIRA for efficient bug tracking and
+          project management. Skilled in application development, debugging,
+          troubleshooting, and unit testing to ensure high-quality deliverables.
+          Adept at working with development tools such as VS Code with a focus
+          on building responsive and user-friendly interfaces.
+        </p>
+        <a href="#" class="hero_btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <h2>Our <span>Services</span></h2>
+
+      <div class="cards">
+        <div class="card glass">
+          <h3>Web Development</h3>
+          <p>Modern responsive websites</p>
+        </div>
+
+        <div class="card glass">
+          <h3>UI/UX Design</h3>
+          <p>Clean and attractive interfaces</p>
+        </div>
+
+        <div class="card glass">
+          <h3>React Apps</h3>
+          <p>Fast scalable applications</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h2>Latest Projects</h2>
+
+      <div class="project-container" id="projects">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="tag">SAP</div>
+          <h3>CTOOL</h3>
+
+          <p><span>Duration:</span> Jan 2023 - Aug 2025</p>
+          <p><span>Team:</span> 10 Members</p>
+          <p><span>Role:</span> Software Developer</p>
+
+          <p class="desc">
+            SAP's CTOOL is a suite of tools used to manage and update customer
+            and operator data stored in SAP systems.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="tag">Asvix</div>
+          <h3>Mediboat</h3>
+
+          <p><span>Duration:</span> Aug 2025 - Oct 2025</p>
+
+          <p class="desc">
+            AI-powered medical chatbot helping users validate queries, track
+            health, and connect with healthcare services.
+          </p>
+
+          <a
+            href="https://medibot-ai.com/"
+            class="btn"
+            target="_blank"
+            title="View Project"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact glass">
+      <h2>Contact <span>Me</span></h2>
+
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Gauri Pawar | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
