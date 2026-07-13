@@ -356,7 +356,7 @@ textarea {
   outline: none;
 }
 
-/* TEXTAREA HEIGHT */
+/* TEXTAREA HEIGHT of Form */
 textarea {
   min-height: 140px;
   resize: none;
