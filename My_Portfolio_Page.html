@@ -26,7 +26,7 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div>
         <svg
           width="200"
           height="80"
@@ -94,17 +94,22 @@
             href="https://linkedin.com/in/your-profile"
             target="_blank"
             class="icon-btn"
+            aria-label="LinkedIn"
           >
             <i class="fab fa-linkedin-in"></i>
           </a>
 
           <!-- Phone -->
-          <a href="tel:+917057567284" class="icon-btn">
+          <a href="tel:+917057567284" class="icon-btn" aria-label="Phone">
             <i class="fas fa-phone"></i>
           </a>
 
           <!-- Email -->
-          <a href="mailto:gauripawar7284@gmail.com" class="icon-btn">
+          <a
+            href="mailto:gauripawar7284@gmail.com"
+            class="icon-btn"
+            aria-label="Email"
+          >
             <i class="fas fa-envelope"></i>
           </a>
         </div>
@@ -117,7 +122,7 @@
         >
       </div>
 
-      <div class="image">
+      <div>
         <div class="hex">
           <img src="./assets/Profile_Image.jpeg" alt="Profile Image" />
         </div>
@@ -126,13 +131,13 @@
 
     <!-- ABOUT -->
     <section id="about" class="about glass">
-      <div class="about-img">
+      <div>
         <div class="hex small">
           <img src="./assets/Profile_Image.jpeg" alt="Profile Image" />
         </div>
       </div>
 
-      <div class="about-text">
+      <div>
         <h2>About <span>Me</span></h2>
         <h3>Frontend Developer</h3>
         <p>
@@ -217,14 +222,57 @@
 
     <!-- CONTACT -->
     <section id="contact" class="contact glass">
-      <h2>Contact <span>Me</span></h2>
+      <div class="contact-wrapper">
+        <!-- LEFT -->
+        <div class="contact-left">
+          <p class="tag">GET IN TOUCH</p>
+          <h1>
+            Let’s work <br />
+            together
+          </h1>
 
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button class="btn">Send</button>
-      </form>
+          <p class="desc">
+            I'm open to UI/UX and frontend missions, short or long-term. Landing
+            page, full product redesign, or just a second pair of eyes — let's
+            talk.
+          </p>
+
+          <div class="contact-info">
+            <p>📧 gauripawar7284@gmail.com</p>
+            <p>🔗 linkedin.com/in/eliott-dev</p>
+            <p>📞 +91 7057567284</p>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-right">
+          <form>
+            <div class="form-row">
+              <div class="input-group">
+                <label>Name *</label>
+                <input type="text" placeholder="Jane Smith" />
+              </div>
+
+              <div class="input-group">
+                <label>Email *</label>
+                <input type="email" placeholder="jane@company.com" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Project inquiry" />
+            </div>
+
+            <div class="input-group">
+              <label>Message *</label>
+              <textarea placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button class="btn">Send message →</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>
